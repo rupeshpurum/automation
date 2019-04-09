@@ -1,6 +1,10 @@
 # Generating pm xml as per the atributes mentioned in the xlsx file.
 
+__author__='Rupesh'
+__status__ = 'Prototype'
 
+import time
+start = time.time()
 import os
 import fileinput
 from glob import glob
@@ -126,3 +130,7 @@ print(os.getcwd())
 # for idx,i in enumerate(ib):
 #     if(type(i) != t):
 #         print idx,type(i)
+
+
+end = time.time()
+print('Time taken for the pm generation in seconds:',end-start)
